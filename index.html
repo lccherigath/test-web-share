@@ -199,7 +199,7 @@
       console.log('clicou em compartilhar');
 
 
-      if (navigator.share) { 
+      if (navigator.share && navigator.userAgent.indexOf('Win') === -1) { 
        navigator.share({
           title: 'WebShare API Demo',
           url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
